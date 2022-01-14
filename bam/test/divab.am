@@ -1,0 +1,19 @@
+PUSH 0;
+STORE q;
+LOOP(
+  LOAD b;
+  LOAD a;
+  LE;
+  ,
+  LOAD q;
+  PUSH 1;
+  ADD;
+  STORE q;
+  LOAD a;
+  LOAD b;
+  SUB;
+  STORE a;
+);
+LOAD a;
+STORE r;
+
